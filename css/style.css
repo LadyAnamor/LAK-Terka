@@ -15,7 +15,6 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
 body {
-    /* max-width: 1100px; */
     margin: 0 auto;
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
@@ -109,7 +108,7 @@ body {
 
 .main {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 .article__heading {
@@ -122,24 +121,23 @@ body {
 }
 
 .article__paragraph {
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     margin: 0;
 }
 
 .article__subheading {
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 .blockquote {
     margin: 0;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .article {
     max-width: 1100px;
     margin: 0;
-    padding-bottom: 20px;
 }
 
 .article--secondary {
@@ -153,7 +151,7 @@ body {
     object-fit: cover;
 }
 
-.image--bottom {
+/* .image--bottom {
     padding-top: 20px;
 }
 
@@ -163,7 +161,7 @@ body {
 
 .image--top{
     padding-top: 0px;
-}
+} */
 
 .aside {
     max-width: 1100px;
@@ -276,10 +274,6 @@ li {
         top: 0;
     }
 
-    .flex-article-img {
-        display: flex;
-    }
-
     .article {
         flex: 1 0 60%;
     }
@@ -288,7 +282,18 @@ li {
         flex: 0 1 30%;
         max-width: 30%;
         object-fit: cover;
-        padding: 0 20px 0 20px;
     }
-    
+
+    .article--flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article__content {
+        flex: 1 0 65%;
+    }
+
+    .article__image {
+        flex: 0 1 30%;
+    }
 }
