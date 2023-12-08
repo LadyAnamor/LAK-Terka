@@ -69,7 +69,7 @@ body {
 
 .menu {
     position: sticky;
-    top: 0px;
+    top: 0;
     display: flex;
     align-items: stretch;
     justify-content: space-around;    
@@ -121,13 +121,13 @@ body {
 }
 
 .article__paragraph {
-    padding: 0 20px 20px 20px;
+    padding: 0 30px 20px 20px;
     margin: 0;
 }
 
 .article__subheading {
     margin: 0;
-    padding: 10px;
+    padding: 0 30px;
 }
 
 .blockquote {
@@ -150,18 +150,6 @@ body {
     margin: 0;
     object-fit: cover;
 }
-
-/* .image--bottom {
-    padding-top: 20px;
-}
-
-.image--middle {
-    padding: 20px 0;
-}
-
-.image--top{
-    padding-top: 0px;
-} */
 
 .aside {
     max-width: 1100px;
@@ -223,10 +211,10 @@ th {
     font-weight: 700;
 }
 
-li {
-    padding-top: 5px;
-    
+.article__list li {
+    padding: 0 30px 10px 20px;
 }
+
 
 .icon {
     width: 2em;
