@@ -5,9 +5,7 @@ colors:
 cervena  #bc9fa1
 zelena   #a7a8a0
 ruzova      #EACEC3;
-
 tmave cervena #93474c
-
 
 */
 
@@ -97,7 +95,7 @@ body {
     font-weight: 700;
     text-shadow: 1px 1px 5px #4f2d2d;
     font-size: 18px;
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 .button:hover {
@@ -153,7 +151,7 @@ body {
 
 .aside {
     max-width: 1100px;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px 20px 30px 20px;
 }
 
@@ -242,13 +240,13 @@ th {
 @media screen and (min-width: 1100px) {
     .site-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(4, auto);
         grid-template-areas: 
-        "header  header   menu"
-        "main    main     main"
-        "aside   aside    aside"
-        "footer  footer   footer";
+        "header  header  menu   menu"
+        "main    main    main   main"
+        "aside   aside   aside  aside"
+        "footer  footer  footer footer";
     }
 
     .header { grid-area: header; }
