@@ -26,8 +26,16 @@
             <a href="/" class="menu__item button">O mně</a>
             <a href="/cenik/" class="menu__item button">Ceník</a>
             <a href="/kontakt/" class="menu__item button">Kontakt</a>
-            <a href="#sluzby" class="menu__item button button--special">Moje služby</a>
+            <a href="#sluzby" class="menu__item button" id="button--special">Moje služby</a>
         </menu>
+        
+        <div class="menu--secondary hidden" id="menu--special">
+            <a href="/laktacni/" class="navigation__link button" >Laktační poradenství</a>
+            <a href="/predporodni/" class="navigation__link button">Předporodní péče</a> 
+            <a href="/poporodni/" class="navigation__link button">Poporodní péče</a>
+            <a href="/noseni/" class="navigation__link button">Nošení dětí v šátku a nosítku</a>
+            <a href="/doprovod/" class="navigation__link button">Doprovod k porodu</a>
+         </div>         
        
 
         <main class="main">
@@ -39,11 +47,11 @@
         <aside class="aside">
             <h2 class="aside__heading">Moje služby<a name="sluzby"></a></h2>
             <nav class="navigation">
-                <a class="navigation__link button" href="/laktacni/">Laktační poradenství</a>
-                <a class="navigation__link button" href="/predporodni/">Předporodní péče</a> 
-                <a class="navigation__link button" href="/poporodni/">Poporodní péče</a>
-                <a class="navigation__link button" href="/noseni/">Nošení dětí v šátku a nosítku</a>
-                <a class="navigation__link button" href="/doprovod/">Doprovod k porodu</a>
+                <a href="/predporodni/" class="menu__item button">Předporodní péče</a> 
+                <a href="/poporodni/" class="menu__item button">Poporodní péče</a>
+                <a href="/laktacni/" class="menu__item button">Laktační poradenství</a>
+                <a href="/noseni/" class="menu__item button">Nošení dětí v šátku a nosítku</a>
+                <a href="/doprovod/" class="menu__item button">Doprovod k porodu</a>
             </nav>
         </aside>
         
@@ -56,5 +64,14 @@
                 © 2023 Tereza Melichar | Icons by <a class="link" href="https://icons8.com/">icons8</a>.
         </footer>
     </div>
+
+<script>
+   const tlacitko= document.querySelector('#button--special');
+   const menu= document.querySelector('#menu--special');
+
+   tlacitko.addEventListener('click', ()=>{menu.classList.toggle('hidden')});
+
+</script>
+    
 </body>
 </html>
